@@ -23,18 +23,12 @@ function countReceived() {
     const table = document.querySelector('.generic_kv_table');
     const records = table.querySelectorAll('tr');
 
-    let reportCount = 0;
-    let commendCount = 0;
-
     records.forEach((element, index) => {
         if (index !== 0) {
             const data = element.querySelectorAll('td');
             const ID = data[0].innerHTML;
             const reported = (data[2].innerHTML === 'Yes' || data[3].innerHTML === 'Yes' || data[4].innerHTML === 'Yes');
             const commended = (data[5].innerHTML === 'Yes' || data[6].innerHTML === 'Yes' || data[7].innerHTML === 'Yes' || data[8].innerHTML === 'Yes');
-
-            reportCount += reported;
-            commendCount += commended;
 
             if (matchHistory.length > 0) {
                 if (matchHistory[matchHistory.length - 1].gameID === data[0].innerHTML) {
