@@ -1,3 +1,6 @@
+// Go to: https://steamcommunity.com/my/gcpd/570/?category=Account&tab=MatchPlayerReportIncoming
+// And copy code below into console (Ctrl + Shift + J)
+
 let interval = setInterval(clickButton, 100);
 
 function clickButton() {
