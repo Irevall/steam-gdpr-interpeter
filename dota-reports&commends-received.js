@@ -55,7 +55,7 @@ function countReceived() {
         }
     }
 
-    if (sortedByReports.length > 0) {
+    if (sortedByCommends.length > 0) {
         const gamesMostCommends = sortedByCommends.filter(element => element.commendsReceived === sortedByCommends[0].commendsReceived);
         console.log('The most commends you\'ve got was ' + sortedByCommends[0].commendsReceived + ' (happened in ' + gamesMostCommends.length + ' game' + (gamesMostCommends.length > 1 ? 's)' : ')'));
         if (confirm('Do you want to list those games?')) {
